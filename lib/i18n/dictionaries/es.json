@@ -1,0 +1,305 @@
+{
+  "common": { "loading": "Cargando...", "save": "Guardar", "cancel": "Cancelar", "back": "Volver", "next": "Siguiente", "submit": "Enviar", "error": "Error", "success": "Éxito" },
+  "nav": { "features": "Funcionalidades", "howItWorks": "Cómo funciona", "pricing": "Precios", "testimonials": "Testimonios", "login": "Iniciar sesión", "signup": "Prueba gratis", "dashboard": "Panel de control", "settings": "Configuración", "profile": "Mi Perfil", "logout": "Cerrar sesión", "accessChat": "Acceder al chat", "accessDashboard": "Acceder al panel" },
+  "login": {
+    "title": "Iniciar sesión", "subtitle": "Inicia sesión en tu cuenta para acceder al chat IA",
+    "emailLabel": "Email", "emailPlaceholder": "ejemplo@email.com", "passwordLabel": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?", "submit": "Iniciar sesión", "submitting": "Iniciando sesión...",
+    "noAccount": "¿No tienes cuenta?", "signupLink": "Regístrate",
+    "orContinueWith": "o continuar con", "comingSoon": "Próximamente",
+    "resetTitle": "Restablecer contraseña", "resetSubtitle": "Ingresa tu email para recibir un enlace de restablecimiento",
+    "resetSubmit": "Enviar enlace", "resetSending": "Enviando...",
+    "resetSuccess": "Se envió un email de restablecimiento a ", "backToLogin": "Volver al inicio de sesión",
+    "unexpectedError": "Ocurrió un error inesperado", "watchDemo": "Ver demo"
+  },
+  "signup": {
+    "title": "Crear una cuenta", "subtitle": "Comienza tu prueba gratis de 7 días",
+    "fullName": "Nombre completo", "fullNamePlaceholder": "Juan García",
+    "emailLabel": "Email", "emailPlaceholder": "juan@ejemplo.com",
+    "company": "Empresa", "companyPlaceholder": "Tu empresa",
+    "phone": "Teléfono", "phonePlaceholder": "+1 (514) 000-0000",
+    "specialty": "Especialidad", "passwordLabel": "Contraseña", "passwordPlaceholder": "Mínimo 8 caracteres",
+    "confirmPassword": "Confirmar contraseña", "confirmPasswordPlaceholder": "Repite la contraseña",
+    "termsAccept": "Acepto los", "terms": "términos de uso", "and": "y la", "privacy": "política de privacidad",
+    "submit": "Crear mi cuenta", "submitting": "Creando cuenta...",
+    "hasAccount": "¿Ya tienes cuenta?", "loginLink": "Iniciar sesión",
+    "passwordMismatch": "Las contraseñas no coinciden", "passwordTooShort": "La contraseña debe tener al menos 8 caracteres",
+    "acceptTerms": "Debes aceptar los términos de uso y la política de privacidad para continuar.",
+    "checkEmail": "Revisa tu email", "checkEmailDesc": "Enviamos un enlace de confirmación a",
+    "confirmInstruction": "Haz clic en el enlace del email para activar tu cuenta.",
+    "noEmailReceived": "¿No recibiste el email?", "checkSpam": "Revisa tu carpeta de spam o inténtalo de nuevo.",
+    "selectedPlan": "Plan seleccionado", "included": "Incluido",
+    "invitedBy": "Fuiste invitado por", "invitedEmail": "Tu email de invitación",
+    "invalidInvite": "Esta invitación es inválida o ha expirado.", "inviteError": "Error al cargar la invitación."
+  },
+  "dashboard": {
+    "title": "Panel de control", "subtitle": "Gestiona tus proyectos de presupuesto",
+    "newProject": "Nuevo proyecto", "searchPlaceholder": "Buscar un proyecto...",
+    "filterAll": "Todos", "filterActive": "Activos", "filterCompleted": "Completados",
+    "sortDate": "Fecha", "sortAmount": "Monto", "gridView": "Cuadrícula", "listView": "Lista",
+    "noProjects": "No se encontraron proyectos", "noProjectsDesc": "Crea tu primer proyecto para comenzar",
+    "createFirst": "Crear un proyecto", "project": "proyecto", "projects": "proyectos",
+    "total": "Total", "thisMonth": "Este mes", "soumissions": "presupuestos",
+    "trialEnds": "La prueba termina en", "days": "días", "upgrade": "Actualizar",
+    "plan": "Plan", "submissionsUsed": "Presupuestos usados", "of": "de", "unlimited": "ilimitados",
+    "settings": "Configuración", "profile": "Mi Perfil", "help": "Ayuda", "logout": "Cerrar sesión",
+    "statusDraft": "Borrador", "statusSent": "Enviado", "statusAccepted": "Aceptado",
+    "statusRejected": "Rechazado", "statusArchived": "Archivado", "statusInProgress": "En progreso",
+    "openChat": "Abrir chat", "lastUpdated": "Última actualización", "amount": "Monto"
+  },
+  "settings": {
+    "title": "Configuración", "subtitle": "Gestiona tu aplicación de chat IA",
+    "currentPlan": "Suscripción actual", "managePlan": "Gestionar suscripción",
+    "profile": "Mi Perfil", "profileDesc": "Gestiona tu información personal y de empresa",
+    "agents": "Configuración de agentes", "agentsDesc": "Configura tus agentes IA personalizados",
+    "team": "Gestión de equipo", "teamDesc": "Gestiona los miembros de tu equipo",
+    "subscription": "Suscripción", "subscriptionDesc": "Gestiona tu plan y facturación",
+    "admin": "Administración", "adminDesc": "Herramientas de administración avanzadas",
+    "back": "Volver al chat", "loading": "Cargando...", "active": "Activo", "trial": "Prueba", "free": "Gratis"
+  },
+  "profile": {
+    "title": "Mi Perfil", "subtitle": "Gestiona tu información personal",
+    "personalInfo": "Información personal", "personalInfoDesc": "Actualiza tu información de perfil",
+    "companyInfo": "Información de la empresa", "companyInfoDesc": "Logo, número RBQ y ubicación para tus presupuestos",
+    "changePassword": "Cambiar contraseña", "changePasswordDesc": "Actualiza tu contraseña",
+    "email": "Email", "firstName": "Nombre", "lastName": "Apellido", "phone": "Teléfono",
+    "specialty": "Especialidad", "specialtyHint": "El agente adapta sus preguntas y sugerencias a tu especialidad.",
+    "language": "Idioma preferido", "languageHint": "El agente responderá en este idioma.",
+    "companyName": "Nombre de la empresa", "rbqNumber": "Número RBQ", "rbqPlaceholder": "Ej: 8358-4150-01",
+    "logo": "Logo de la empresa", "logoDesc": "Aparecerá en tus presupuestos",
+    "uploadLogo": "Subir un logo", "changeLogo": "Cambiar logo", "uploading": "Subiendo...",
+    "city": "Ciudad", "province": "Provincia / Estado", "country": "País",
+    "newPassword": "Nueva contraseña", "confirmPassword": "Confirmar nueva contraseña",
+    "passwordMin": "Mínimo 6 caracteres", "passwordMismatch": "Las contraseñas no coinciden",
+    "save": "Guardar", "saving": "Guardando...", "saved": "Perfil guardado", "saveError": "Error al guardar el perfil",
+    "passwordSaved": "Contraseña actualizada", "passwordError": "Error al actualizar la contraseña",
+    "back": "Volver a configuración", "loading": "Cargando...",
+    "updatePassword": "Actualizar contraseña", "updatingPassword": "Actualizando..."
+  },
+  "chat": {
+    "newConversation": "Nueva conversación", "noConversations": "Sin conversaciones",
+    "startNew": "Inicia una nueva conversación", "typeMessage": "Escribe tu mensaje...", "send": "Enviar",
+    "uploadFile": "Subir archivo", "exportExcel": "Exportar a Excel", "exporting": "Exportando...",
+    "exportSuccess": "Presupuesto exportado", "exportError": "Error de exportación",
+    "soumission": "Presupuesto", "submit": "Enviar", "submitting": "Enviando...",
+    "viewSoumission": "Ver presupuesto", "deleteConversation": "Eliminar", "renameConversation": "Renombrar",
+    "settings": "Configuración", "profile": "Mi Perfil", "dashboard": "Panel de control", "logout": "Cerrar sesión",
+    "loading": "Cargando...", "thinking": "El agente está pensando...",
+    "addDetails": "Agregar detalles (opcional)...", "yourAnswer": "Tu respuesta...",
+    "confirmDelete": "¿Eliminar esta conversación?", "cancel": "Cancelar", "confirm": "Confirmar"
+  },
+  "landing": {
+    "hero": { "badge": "Impulsado por IA", "title": "Crea tus presupuestos en", "titleHighlight": "30 minutos", "titleEnd": "en lugar de varias horas", "subtitle": "BuilderAI es tu asistente inteligente para crear presupuestos profesionales. Importa tus planos, chatea con la IA y genera documentos completos automáticamente.", "cta": "Comenzar prueba gratis", "ctaSecondary": "Ver demostración" },
+    "stats": { "perSubmission": "por presupuesto", "timeSaved": "tiempo ahorrado", "activeContractors": "contratistas activos", "satisfaction": "satisfacción del cliente" },
+    "features": {
+      "title": "Todo lo que necesitas para tus presupuestos", "subtitle": "Una plataforma completa para simplificar y acelerar tu proceso de presupuestación",
+      "ai": { "title": "Asistente IA conversacional", "description": "Chatea naturalmente con la IA para extraer información de tus planos y definir las especificaciones del proyecto." },
+      "import": { "title": "Importación de planos PDF", "description": "Sube tus planos arquitectónicos y la IA los analiza automáticamente para extraer dimensiones y detalles." },
+      "generation": { "title": "Generación automática", "description": "Genera presupuestos completos en formato Excel o PDF con un clic, listos para enviar a tus clientes." },
+      "tracking": { "title": "Seguimiento de proyectos", "description": "Gestiona todos tus proyectos desde un panel centralizado con seguimiento de estado." },
+      "collaboration": { "title": "Colaboración de equipo", "description": "Invita a tus colegas a colaborar en proyectos con gestión de roles y permisos." },
+      "security": { "title": "Datos seguros", "description": "Tus planos y datos están protegidos con cifrado de nivel empresarial." }
+    },
+    "howItWorks": {
+      "title": "¿Cómo funciona?", "subtitle": "Tres pasos simples para crear tus presupuestos profesionales",
+      "step1": { "title": "Importa tus planos", "description": "Sube tus planos PDF o imágenes. Nuestra IA los analiza y extrae automáticamente la información clave." },
+      "step2": { "title": "Chatea con el asistente", "description": "Afina los detalles con nuestro asistente IA. Te hace las preguntas correctas y entiende tus especificaciones." },
+      "step3": { "title": "Genera el presupuesto", "description": "Con un clic, obtén un presupuesto completo en formato Excel o PDF, listo para enviar a tu cliente." }
+    },
+    "pricing": {
+      "title": "Elige tu plan", "subtitle": "Precios simples y transparentes para todos los contratistas", "popular": "Popular",
+      "free": { "name": "Prueba Gratis", "price": "$0", "period": "7 días", "features": ["3 presupuestos por mes", "Importación de planos PDF", "Asistente IA básico", "Exportación Excel"], "cta": "Comenzar gratis" },
+      "base": { "name": "Base", "price": "$49", "period": "/mes", "features": ["15 presupuestos por mes", "Importación de planos PDF", "Asistente IA avanzado", "Exportación Excel y PDF", "Soporte por email"], "cta": "Elegir Base" },
+      "pro": { "name": "Pro", "price": "$99", "period": "/mes", "features": ["Presupuestos ilimitados", "Importación de planos PDF", "Asistente IA premium", "Exportación Excel y PDF", "Soporte prioritario", "Colaboración de equipo", "Personalización avanzada"], "cta": "Elegir Pro" }
+    },
+    "testimonials": { "title": "Lo que dicen nuestros clientes", "subtitle": "Cientos de contratistas ya confían en BuilderAI" },
+    "cta": { "title": "¿Listo para transformar tus presupuestos?", "subtitle": "Comienza tu prueba gratis de 7 días hoy. No se requiere tarjeta de crédito.", "button": "Comenzar gratis" },
+    "footer": { "description": "La plataforma IA para contratistas de construcción que quieren ahorrar tiempo en sus presupuestos.", "product": "Producto", "company": "Empresa", "legal": "Legal", "privacy": "Política de privacidad", "terms": "Términos de servicio", "about": "Acerca de", "contact": "Contacto", "blog": "Blog", "allRights": "Todos los derechos reservados." }
+  },
+  "auth": {
+    "login": { "title": "Iniciar sesión", "subtitle": "Accede a tu cuenta", "email": "Email", "password": "Contraseña", "forgotPassword": "¿Olvidaste tu contraseña?", "submit": "Iniciar sesión", "noAccount": "¿No tienes cuenta?", "signupLink": "Crear cuenta" },
+    "signup": { "title": "Crear cuenta", "subtitle": "Comienza tu prueba gratis", "firstName": "Nombre", "lastName": "Apellido", "email": "Email", "password": "Contraseña", "confirmPassword": "Confirmar contraseña", "submit": "Crear mi cuenta", "hasAccount": "¿Ya tienes cuenta?", "loginLink": "Iniciar sesión" }
+  }
+}
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "error": "Error",
+    "success": "Exito"
+  },
+  "nav": {
+    "features": "Funcionalidades",
+    "howItWorks": "Como funciona",
+    "pricing": "Precios",
+    "testimonials": "Testimonios",
+    "login": "Iniciar sesion",
+    "signup": "Prueba gratis",
+    "dashboard": "Panel de control",
+    "settings": "Configuracion",
+    "profile": "Mi Perfil",
+    "logout": "Cerrar sesion",
+    "accessChat": "Acceder al chat",
+    "accessDashboard": "Acceder al panel"
+  },
+  "landing": {
+    "hero": {
+      "badge": "Impulsado por IA",
+      "title": "Crea tus presupuestos en",
+      "titleHighlight": "30 minutos",
+      "titleEnd": "en lugar de varias horas",
+      "subtitle": "BuilderAI es tu asistente inteligente para crear presupuestos profesionales. Importa tus planos, chatea con la IA y genera documentos completos automaticamente.",
+      "cta": "Comenzar prueba gratis",
+      "ctaSecondary": "Ver demostracion"
+    },
+    "stats": {
+      "perSubmission": "por presupuesto",
+      "timeSaved": "tiempo ahorrado",
+      "activeContractors": "contratistas activos",
+      "satisfaction": "satisfaccion del cliente"
+    },
+    "features": {
+      "title": "Todo lo que necesitas para tus presupuestos",
+      "subtitle": "Una plataforma completa para simplificar y acelerar tu proceso de presupuestacion",
+      "ai": {
+        "title": "Asistente IA conversacional",
+        "description": "Chatea naturalmente con la IA para extraer informacion de tus planos y definir las especificaciones del proyecto."
+      },
+      "import": {
+        "title": "Importacion de planos PDF",
+        "description": "Sube tus planos arquitectonicos y la IA los analiza automaticamente para extraer dimensiones y detalles."
+      },
+      "generation": {
+        "title": "Generacion automatica",
+        "description": "Genera presupuestos completos en formato Excel o PDF con un clic, listos para enviar a tus clientes."
+      },
+      "tracking": {
+        "title": "Seguimiento de proyectos",
+        "description": "Gestiona todos tus proyectos de presupuesto desde un panel centralizado con seguimiento de estado."
+      },
+      "collaboration": {
+        "title": "Colaboracion de equipo",
+        "description": "Invita a tus colegas a colaborar en proyectos con gestion de roles y permisos."
+      },
+      "security": {
+        "title": "Datos seguros",
+        "description": "Tus planos y datos estan protegidos con cifrado de nivel empresarial."
+      }
+    },
+    "howItWorks": {
+      "title": "Como funciona?",
+      "subtitle": "Tres pasos simples para crear tus presupuestos profesionales",
+      "step1": {
+        "title": "Importa tus planos",
+        "description": "Sube tus planos PDF o imagenes. Nuestra IA los analiza y extrae automaticamente la informacion clave."
+      },
+      "step2": {
+        "title": "Chatea con el asistente",
+        "description": "Afina los detalles con nuestro asistente IA. Te hace las preguntas correctas y entiende tus especificaciones."
+      },
+      "step3": {
+        "title": "Genera el presupuesto",
+        "description": "Con un clic, obtiene un presupuesto completo en formato Excel o PDF, listo para enviar a tu cliente."
+      }
+    },
+    "pricing": {
+      "title": "Elige tu plan",
+      "subtitle": "Precios simples y transparentes para todos los contratistas",
+      "popular": "Popular",
+      "free": {
+        "name": "Prueba Gratis",
+        "price": "$0",
+        "period": "7 dias",
+        "features": [
+          "3 presupuestos por mes",
+          "Importacion de planos PDF",
+          "Asistente IA basico",
+          "Exportacion Excel"
+        ],
+        "cta": "Comenzar gratis"
+      },
+      "base": {
+        "name": "Base",
+        "price": "$49",
+        "period": "/mes",
+        "features": [
+          "15 presupuestos por mes",
+          "Importacion de planos PDF",
+          "Asistente IA avanzado",
+          "Exportacion Excel y PDF",
+          "Soporte por email"
+        ],
+        "cta": "Elegir Base"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$99",
+        "period": "/mes",
+        "features": [
+          "Presupuestos ilimitados",
+          "Importacion de planos PDF",
+          "Asistente IA premium",
+          "Exportacion Excel y PDF",
+          "Soporte prioritario",
+          "Colaboracion de equipo",
+          "Personalizacion avanzada"
+        ],
+        "cta": "Elegir Pro"
+      }
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Cientos de contratistas ya confian en BuilderAI"
+    },
+    "cta": {
+      "title": "Listo para transformar tus presupuestos?",
+      "subtitle": "Comienza tu prueba gratis de 7 dias hoy. No se requiere tarjeta de credito.",
+      "button": "Comenzar gratis"
+    },
+    "footer": {
+      "description": "La plataforma IA para contratistas de construccion que quieren ahorrar tiempo en sus presupuestos.",
+      "product": "Producto",
+      "company": "Empresa",
+      "legal": "Legal",
+      "privacy": "Politica de privacidad",
+      "terms": "Terminos de servicio",
+      "about": "Acerca de",
+      "contact": "Contacto",
+      "blog": "Blog",
+      "allRights": "Todos los derechos reservados."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar sesion",
+      "subtitle": "Accede a tu cuenta",
+      "email": "Email",
+      "password": "Contrasena",
+      "forgotPassword": "Olvidaste tu contrasena?",
+      "submit": "Iniciar sesion",
+      "noAccount": "No tienes cuenta?",
+      "signupLink": "Crear una cuenta"
+    },
+    "signup": {
+      "title": "Crear una cuenta",
+      "subtitle": "Comienza tu prueba gratis",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "password": "Contrasena",
+      "confirmPassword": "Confirmar contrasena",
+      "submit": "Crear mi cuenta",
+      "hasAccount": "Ya tienes una cuenta?",
+      "loginLink": "Iniciar sesion"
+    }
+  },
+  "profile": {
+    "title": "Mi Perfil",
+    "subtitle": "Gestiona tu informacion personal",
+    "personalInfo": "Informacion personal",
+    "companyInfo": "Informacion de la empresa",
+    "language": "Idioma preferido",
+    "languageHint": "El agente respondera en este idioma."
+  }
+}

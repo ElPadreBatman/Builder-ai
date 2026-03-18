@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep:*)",
+      "Bash(find '/c/Users/tatot/Documents/Claude/code/Builder ai' -type f -name *.sql)",
+      "Bash(grep -l \"soumission_workflow\" \"/c/Users/tatot/Documents/Claude/code/Builder ai\"/scripts/*.sql)",
+      "Bash(grep -r division_thresholds '/c/Users/tatot/Documents/Claude/code/Builder ai' --include=*.sql --include=*.ts)",
+      "Bash(find '/c/Users/tatot/Documents/Claude/code/Builder ai' -type f \\\\\\(-name schema.* -o -name database.* -o -name types.* \\\\\\))"
+    ]
+  }
+}

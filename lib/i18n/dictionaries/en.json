@@ -1,0 +1,305 @@
+{
+  "common": { "loading": "Loading...", "save": "Save", "cancel": "Cancel", "back": "Back", "next": "Next", "submit": "Submit", "error": "Error", "success": "Success" },
+  "nav": { "features": "Features", "howItWorks": "How it works", "pricing": "Pricing", "testimonials": "Testimonials", "login": "Sign in", "signup": "Free trial", "dashboard": "Dashboard", "settings": "Settings", "profile": "My Profile", "logout": "Sign out", "accessChat": "Access chat", "accessDashboard": "Access dashboard" },
+  "login": {
+    "title": "Sign in", "subtitle": "Sign in to your account to access the AI chat",
+    "emailLabel": "Email", "emailPlaceholder": "example@email.com", "passwordLabel": "Password",
+    "forgotPassword": "Forgot password?", "submit": "Sign in", "submitting": "Signing in...",
+    "noAccount": "Don't have an account?", "signupLink": "Sign up",
+    "orContinueWith": "or continue with", "comingSoon": "Coming soon",
+    "resetTitle": "Reset password", "resetSubtitle": "Enter your email to receive a reset link",
+    "resetSubmit": "Send link", "resetSending": "Sending...",
+    "resetSuccess": "A reset email has been sent to ", "backToLogin": "Back to sign in",
+    "unexpectedError": "An unexpected error occurred", "watchDemo": "Watch demo"
+  },
+  "signup": {
+    "title": "Create an account", "subtitle": "Start your free 7-day trial",
+    "fullName": "Full name", "fullNamePlaceholder": "John Smith",
+    "emailLabel": "Email", "emailPlaceholder": "john@example.com",
+    "company": "Company", "companyPlaceholder": "Your company",
+    "phone": "Phone", "phonePlaceholder": "+1 (514) 000-0000",
+    "specialty": "Specialty", "passwordLabel": "Password", "passwordPlaceholder": "Minimum 8 characters",
+    "confirmPassword": "Confirm password", "confirmPasswordPlaceholder": "Repeat password",
+    "termsAccept": "I accept the", "terms": "terms of use", "and": "and the", "privacy": "privacy policy",
+    "submit": "Create my account", "submitting": "Creating account...",
+    "hasAccount": "Already have an account?", "loginLink": "Sign in",
+    "passwordMismatch": "Passwords do not match", "passwordTooShort": "Password must be at least 8 characters",
+    "acceptTerms": "You must accept the terms of use and privacy policy to continue.",
+    "checkEmail": "Check your email", "checkEmailDesc": "We sent a confirmation link to",
+    "confirmInstruction": "Click the link in the email to activate your account.",
+    "noEmailReceived": "Didn't receive the email?", "checkSpam": "Check your spam folder or try again.",
+    "selectedPlan": "Selected plan", "included": "Included",
+    "invitedBy": "You were invited by", "invitedEmail": "Your invitation email",
+    "invalidInvite": "This invitation is invalid or has expired.", "inviteError": "Error loading invitation."
+  },
+  "dashboard": {
+    "title": "Dashboard", "subtitle": "Manage your submission projects",
+    "newProject": "New project", "searchPlaceholder": "Search a project...",
+    "filterAll": "All", "filterActive": "Active", "filterCompleted": "Completed",
+    "sortDate": "Date", "sortAmount": "Amount", "gridView": "Grid", "listView": "List",
+    "noProjects": "No projects found", "noProjectsDesc": "Create your first project to get started",
+    "createFirst": "Create a project", "project": "project", "projects": "projects",
+    "total": "Total", "thisMonth": "This month", "soumissions": "submissions",
+    "trialEnds": "Trial ends in", "days": "days", "upgrade": "Upgrade",
+    "plan": "Plan", "submissionsUsed": "Submissions used", "of": "of", "unlimited": "unlimited",
+    "settings": "Settings", "profile": "My Profile", "help": "Help", "logout": "Sign out",
+    "statusDraft": "Draft", "statusSent": "Sent", "statusAccepted": "Accepted",
+    "statusRejected": "Rejected", "statusArchived": "Archived", "statusInProgress": "In progress",
+    "openChat": "Open chat", "lastUpdated": "Last updated", "amount": "Amount"
+  },
+  "settings": {
+    "title": "Settings", "subtitle": "Manage your AI chat application",
+    "currentPlan": "Current Subscription", "managePlan": "Manage subscription",
+    "profile": "My Profile", "profileDesc": "Manage your personal and company information",
+    "agents": "Agent Configuration", "agentsDesc": "Configure your custom AI agents",
+    "team": "Team Management", "teamDesc": "Manage your team members",
+    "subscription": "Subscription", "subscriptionDesc": "Manage your plan and billing",
+    "admin": "Administration", "adminDesc": "Advanced administration tools",
+    "back": "Back to chat", "loading": "Loading...", "active": "Active", "trial": "Trial", "free": "Free"
+  },
+  "profile": {
+    "title": "My Profile", "subtitle": "Manage your personal information",
+    "personalInfo": "Personal information", "personalInfoDesc": "Update your profile information",
+    "companyInfo": "Company information", "companyInfoDesc": "Logo, RBQ number and location for your submissions",
+    "changePassword": "Change password", "changePasswordDesc": "Update your password",
+    "email": "Email", "firstName": "First name", "lastName": "Last name", "phone": "Phone",
+    "specialty": "Specialty", "specialtyHint": "The agent adapts its questions and suggestions to your trade.",
+    "language": "Preferred language", "languageHint": "The agent will respond in this language.",
+    "companyName": "Company name", "rbqNumber": "RBQ number", "rbqPlaceholder": "Ex: 8358-4150-01",
+    "logo": "Company logo", "logoDesc": "Will appear on your submissions",
+    "uploadLogo": "Upload a logo", "changeLogo": "Change logo", "uploading": "Uploading...",
+    "city": "City", "province": "Province / State", "country": "Country",
+    "newPassword": "New password", "confirmPassword": "Confirm new password",
+    "passwordMin": "Minimum 6 characters", "passwordMismatch": "Passwords do not match",
+    "save": "Save", "saving": "Saving...", "saved": "Profile saved", "saveError": "Error saving profile",
+    "passwordSaved": "Password updated", "passwordError": "Error updating password",
+    "back": "Back to settings", "loading": "Loading...",
+    "updatePassword": "Update password", "updatingPassword": "Updating..."
+  },
+  "chat": {
+    "newConversation": "New conversation", "noConversations": "No conversations",
+    "startNew": "Start a new conversation", "typeMessage": "Type your message...", "send": "Send",
+    "uploadFile": "Upload file", "exportExcel": "Export to Excel", "exporting": "Exporting...",
+    "exportSuccess": "Submission exported", "exportError": "Export error",
+    "soumission": "Submission", "submit": "Submit", "submitting": "Submitting...",
+    "viewSoumission": "View submission", "deleteConversation": "Delete", "renameConversation": "Rename",
+    "settings": "Settings", "profile": "My Profile", "dashboard": "Dashboard", "logout": "Sign out",
+    "loading": "Loading...", "thinking": "Agent is thinking...",
+    "addDetails": "Add details (optional)...", "yourAnswer": "Your answer...",
+    "confirmDelete": "Delete this conversation?", "cancel": "Cancel", "confirm": "Confirm"
+  },
+  "landing": {
+    "hero": { "badge": "Powered by AI", "title": "Create your submissions in", "titleHighlight": "30 minutes", "titleEnd": "instead of several hours", "subtitle": "BuilderAI is your intelligent assistant for creating professional submissions. Import your plans, chat with AI, and generate complete documents automatically.", "cta": "Start free trial", "ctaSecondary": "Watch demo" },
+    "stats": { "perSubmission": "per submission", "timeSaved": "time saved", "activeContractors": "active contractors", "satisfaction": "customer satisfaction" },
+    "features": {
+      "title": "Everything you need for your submissions", "subtitle": "A complete platform to simplify and accelerate your submission process",
+      "ai": { "title": "Conversational AI assistant", "description": "Chat naturally with AI to extract information from your plans and define project specifications." },
+      "import": { "title": "PDF plan import", "description": "Upload your architectural plans and AI automatically analyzes them to extract dimensions and details." },
+      "generation": { "title": "Automatic generation", "description": "Generate complete submissions in Excel or PDF format in one click, ready to send to your clients." },
+      "tracking": { "title": "Project tracking", "description": "Manage all your submission projects from a centralized dashboard with status tracking." },
+      "collaboration": { "title": "Team collaboration", "description": "Invite colleagues to collaborate on projects with role and permission management." },
+      "security": { "title": "Secure data", "description": "Your plans and data are protected with enterprise-level encryption." }
+    },
+    "howItWorks": {
+      "title": "How does it work?", "subtitle": "Three simple steps to create your professional submissions",
+      "step1": { "title": "Import your plans", "description": "Upload your PDF plans or images. Our AI analyzes them and automatically extracts key information." },
+      "step2": { "title": "Chat with the assistant", "description": "Refine the details with our AI assistant. It asks the right questions and understands your specifications." },
+      "step3": { "title": "Generate the submission", "description": "In one click, get a complete submission in Excel or PDF format, ready to send to your client." }
+    },
+    "pricing": {
+      "title": "Choose your plan", "subtitle": "Simple and transparent pricing for all contractors", "popular": "Popular",
+      "free": { "name": "Free Trial", "price": "$0", "period": "7 days", "features": ["3 submissions per month", "PDF plan import", "Basic AI assistant", "Excel export"], "cta": "Start for free" },
+      "base": { "name": "Base", "price": "$49", "period": "/month", "features": ["15 submissions per month", "PDF plan import", "Advanced AI assistant", "Excel and PDF export", "Email support"], "cta": "Choose Base" },
+      "pro": { "name": "Pro", "price": "$99", "period": "/month", "features": ["Unlimited submissions", "PDF plan import", "Premium AI assistant", "Excel and PDF export", "Priority support", "Team collaboration", "Advanced customization"], "cta": "Choose Pro" }
+    },
+    "testimonials": { "title": "What our clients say", "subtitle": "Hundreds of contractors already trust BuilderAI" },
+    "cta": { "title": "Ready to transform your submissions?", "subtitle": "Start your free 7-day trial today. No credit card required.", "button": "Start for free" },
+    "footer": { "description": "The AI platform for construction contractors who want to save time on their submissions.", "product": "Product", "company": "Company", "legal": "Legal", "privacy": "Privacy policy", "terms": "Terms of use", "about": "About", "contact": "Contact", "blog": "Blog", "allRights": "All rights reserved." }
+  },
+  "auth": {
+    "login": { "title": "Sign in", "subtitle": "Sign in to your account", "email": "Email", "password": "Password", "forgotPassword": "Forgot password?", "submit": "Sign in", "noAccount": "No account?", "signupLink": "Create account" },
+    "signup": { "title": "Create account", "subtitle": "Start your free trial", "firstName": "First name", "lastName": "Last name", "email": "Email", "password": "Password", "confirmPassword": "Confirm password", "submit": "Create my account", "hasAccount": "Already have an account?", "loginLink": "Sign in" }
+  }
+}
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "error": "Error",
+    "success": "Success"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "login": "Log in",
+    "signup": "Free trial",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "profile": "My Profile",
+    "logout": "Log out",
+    "accessChat": "Access chat",
+    "accessDashboard": "Access dashboard"
+  },
+  "landing": {
+    "hero": {
+      "badge": "Powered by AI",
+      "title": "Create your estimates in",
+      "titleHighlight": "30 minutes",
+      "titleEnd": "instead of several hours",
+      "subtitle": "BuilderAI is your intelligent assistant for creating professional estimates. Import your plans, chat with AI, and automatically generate complete documents.",
+      "cta": "Start free trial",
+      "ctaSecondary": "Watch demo"
+    },
+    "stats": {
+      "perSubmission": "per estimate",
+      "timeSaved": "time saved",
+      "activeContractors": "active contractors",
+      "satisfaction": "client satisfaction"
+    },
+    "features": {
+      "title": "Everything you need for your estimates",
+      "subtitle": "A complete platform to simplify and accelerate your estimation process",
+      "ai": {
+        "title": "Conversational AI Assistant",
+        "description": "Chat naturally with AI to extract information from your plans and define project specifications."
+      },
+      "import": {
+        "title": "PDF Plan Import",
+        "description": "Upload your architectural plans and AI automatically analyzes them to extract dimensions and details."
+      },
+      "generation": {
+        "title": "Automatic Generation",
+        "description": "Generate complete estimates in Excel or PDF format with one click, ready to send to your clients."
+      },
+      "tracking": {
+        "title": "Project Tracking",
+        "description": "Manage all your estimation projects from a centralized dashboard with status tracking."
+      },
+      "collaboration": {
+        "title": "Team Collaboration",
+        "description": "Invite your colleagues to collaborate on projects with role and permission management."
+      },
+      "security": {
+        "title": "Secure Data",
+        "description": "Your plans and data are protected with enterprise-level encryption."
+      }
+    },
+    "howItWorks": {
+      "title": "How does it work?",
+      "subtitle": "Three simple steps to create your professional estimates",
+      "step1": {
+        "title": "Import your plans",
+        "description": "Upload your PDF plans or images. Our AI analyzes them and automatically extracts key information."
+      },
+      "step2": {
+        "title": "Chat with the assistant",
+        "description": "Refine details with our AI assistant. It asks the right questions and understands your specifications."
+      },
+      "step3": {
+        "title": "Generate the estimate",
+        "description": "With one click, get a complete estimate in Excel or PDF format, ready to send to your client."
+      }
+    },
+    "pricing": {
+      "title": "Choose your plan",
+      "subtitle": "Simple and transparent pricing for all contractors",
+      "popular": "Popular",
+      "free": {
+        "name": "Free Trial",
+        "price": "$0",
+        "period": "7 days",
+        "features": [
+          "3 estimates per month",
+          "PDF plan import",
+          "Basic AI assistant",
+          "Excel export"
+        ],
+        "cta": "Start for free"
+      },
+      "base": {
+        "name": "Base",
+        "price": "$49",
+        "period": "/month",
+        "features": [
+          "15 estimates per month",
+          "PDF plan import",
+          "Advanced AI assistant",
+          "Excel and PDF export",
+          "Email support"
+        ],
+        "cta": "Choose Base"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$99",
+        "period": "/month",
+        "features": [
+          "Unlimited estimates",
+          "PDF plan import",
+          "Premium AI assistant",
+          "Excel and PDF export",
+          "Priority support",
+          "Team collaboration",
+          "Advanced customization"
+        ],
+        "cta": "Choose Pro"
+      }
+    },
+    "testimonials": {
+      "title": "What our clients say",
+      "subtitle": "Hundreds of contractors already trust BuilderAI"
+    },
+    "cta": {
+      "title": "Ready to transform your estimates?",
+      "subtitle": "Start your 7-day free trial today. No credit card required.",
+      "button": "Start for free"
+    },
+    "footer": {
+      "description": "The AI platform for construction contractors who want to save time on their estimates.",
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "about": "About",
+      "contact": "Contact",
+      "blog": "Blog",
+      "allRights": "All rights reserved."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Log in",
+      "subtitle": "Sign in to your account",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "submit": "Log in",
+      "noAccount": "No account?",
+      "signupLink": "Create an account"
+    },
+    "signup": {
+      "title": "Create an account",
+      "subtitle": "Start your free trial",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submit": "Create my account",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Log in"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "subtitle": "Manage your personal information",
+    "personalInfo": "Personal Information",
+    "companyInfo": "Company Information",
+    "language": "Preferred Language",
+    "languageHint": "The agent will respond in this language."
+  }
+}

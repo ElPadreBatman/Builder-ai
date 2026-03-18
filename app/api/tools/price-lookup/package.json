@@ -1,0 +1,16 @@
+{
+  "name": "@prix-materiaux/price-lookup",
+  "version": "1.0.0",
+  "description": "Cache-first material price lookup with parallel SerpAPI scraping for OpenAI agents",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./materials": "./materials.js",
+    "./openai-tools": "./openai-tools.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.3.0",
+    "axios": "^1.6.0"
+  }
+}
