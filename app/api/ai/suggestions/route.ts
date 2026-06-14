@@ -5,11 +5,6 @@ import { NextResponse } from "next/server"
 import { createClient } from "@supabase/supabase-js"
 import { DIVISIONS_MASTERFORMAT } from "@/types/soumission"
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
-
 interface SuggestionRequest {
   prompt: string
   divisionCode: string
@@ -33,6 +28,7 @@ interface SuggestedItem {
 }
 
 export async function POST(request: Request) {
+  const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
   try {
     const body: SuggestionRequest = await request.json()
     const { prompt, divisionCode, divisionName, projectName, existingItems, taskListName, projectCategory, allProjectPhases } = body

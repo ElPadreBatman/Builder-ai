@@ -9,7 +9,6 @@ import { createClient } from "@supabase/supabase-js"
 import type { Soumission } from "@/types/soumission"
 import { calculerTotauxSoumission, TAUX_HORAIRES_DEFAUT, DIVISIONS_MASTERFORMAT } from "@/types/soumission"
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
 
 // Formats
 const CURRENCY_FORMAT = '#,##0.00 $'
@@ -32,6 +31,8 @@ type CompanyInfo = {
 }
 
 export async function POST(request: NextRequest) {
+  const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+
   try {
     const body = await request.json()
     

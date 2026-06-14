@@ -1,11 +1,6 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@supabase/supabase-js"
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
-
 const EXTRACTION_PROMPT = `Tu es un extracteur de données de projet de construction au Québec.
 Analyse les messages de conversation pour extraire TOUTES les informations structurées.
 
@@ -154,6 +149,8 @@ interface ExtractionResult {
 }
 
 export async function POST(request: Request) {
+  const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+
   try {
     const { conversation_id, messages } = await request.json()
 
@@ -275,6 +272,8 @@ export async function POST(request: Request) {
 
 // GET: Retrieve artifacts for a conversation
 export async function GET(request: Request) {
+  const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+
   try {
     const { searchParams } = new URL(request.url)
     const conversationId = searchParams.get("conversation_id")
@@ -314,6 +313,8 @@ export async function GET(request: Request) {
 
 // PUT: Update a single artifact manually
 export async function PUT(request: Request) {
+  const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+
   try {
     const { id, value, unit } = await request.json()
 

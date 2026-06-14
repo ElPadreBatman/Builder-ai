@@ -4,10 +4,16 @@
 
 import { createClient } from "@supabase/supabase-js"
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
+let _supabase: ReturnType<typeof createClient> | null = null
+function getSupabase() {
+  if (!_supabase) {
+    _supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!
+    )
+  }
+  return _supabase
+}
 
 export interface DivisionContext {
   workflowId: string
@@ -165,7 +171,7 @@ export async function generateDivisionItems(context: DivisionContext): Promise<D
   const sources: Record<string, number> = { db: 0, calculated: 0, ai: 0 }
 
   // 1. Charger les seuils pour cette division
-  const { data: thresholds } = await supabase
+  const { data: thresholds } = await getSupabase()
     .from("division_thresholds")
     .select("*")
     .eq("division_code", context.divisionCode)
@@ -176,7 +182,7 @@ export async function generateDivisionItems(context: DivisionContext): Promise<D
 
   // 2. Chercher les prix dans la base de données
   for (const category of config.priceCategories) {
-    const { data: prices } = await supabase
+    const { data: prices } = await getSupabase()
       .from("construction_prices")
       .select("*")
       .ilike("category", `%${category}%`)
@@ -277,7 +283,7 @@ export async function generateDivisionItems(context: DivisionContext): Promise<D
     : 0
 
   // 7. Mettre à jour le workflow
-  await supabase
+  await getSupabase()
     .from("soumission_workflow")
     .update({
       [`division_${context.divisionCode}_status`]: "completed",
@@ -338,7 +344,7 @@ async function calculateGeometryBasedItems(
   const items: DivisionItem[] = []
   
   // Charger les formules de géométrie
-  const { data: formulas } = await supabase
+  const { data: formulas } = await getSupabase()
     .from("geometry_formulas")
     .select("*")
     .in("category", config.priceCategories)

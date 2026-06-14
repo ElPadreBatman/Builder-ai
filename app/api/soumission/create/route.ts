@@ -6,11 +6,6 @@ import { NextResponse } from "next/server"
 import { createClient } from "@supabase/supabase-js"
 import { generateAllDivisions, DIVISION_CONFIG } from "@/lib/division-agent"
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
-
 // Taux d'imprévus selon le type d'estimation
 const IMPREVU_RATES: Record<string, number> = {
   A: 0.05,
@@ -45,6 +40,10 @@ function generateSoumissionNumber(): string {
 }
 
 export async function POST(request: Request) {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  )
   try {
     const body = await request.json()
     const { conversation_id, project_info, divisions } = body

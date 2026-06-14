@@ -53,7 +53,11 @@ const soumissionCreateTool = {
   }
 }
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+let _supabase: ReturnType<typeof createClient> | null = null
+function getSupabase() {
+  if (!_supabase) _supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+  return _supabase
+}
 
 // Initialisation PriceLookup (lazy - créé à la demande)
 // Fonctionne avec ou sans SERPAPI_KEY (cache local seulement si pas de clé)
@@ -135,7 +139,7 @@ export async function POST(request: Request) {
 
     // ✅ Chargement unique de l'agent avec config multi-phases
     if (agentId) {
-      const { data: agent, error } = await supabase
+      const { data: agent, error } = await getSupabase()
         .from("agents")
         .select("system_prompt, model, temperature, max_tokens, response_format, store_conversations, tools_enabled, vector_store_ids, max_history_messages, workflow_max_tokens")
         .eq("id", agentId)
@@ -158,7 +162,7 @@ export async function POST(request: Request) {
     let userLanguage = "fr"
 
     if (userId) {
-      const { data: profile } = await supabase
+      const { data: profile } = await getSupabase()
         .from("profiles")
         .select("specialty, company, company_name, city, province, country, rbq_number, preferred_language")
         .eq("id", userId)
@@ -775,7 +779,7 @@ async function handleChatCompletionsAPI(
 async function loadConversationHistory(conversationId: string, maxMessages: number = 20) {
   console.log("[v0] Loading history for conversation:", conversationId, "maxMessages:", maxMessages)
 
-  const { data: conversation } = await supabase
+  const { data: conversation } = await getSupabase()
     .from("conversations")
     .select("summary, message_count, workflow_state")
     .eq("id", conversationId)
@@ -791,7 +795,7 @@ async function loadConversationHistory(conversationId: string, maxMessages: numb
   const effectiveLimit = workflowState?.active ? Math.max(maxMessages, 50) : maxMessages
 
   if (conversationSummary && messageCount > 15 && !workflowState?.active) {
-    const { data: recentMessages } = await supabase
+    const { data: recentMessages } = await getSupabase()
       .from("messages")
       .select("role, content")
       .eq("conversation_id", conversationId)
@@ -806,7 +810,7 @@ async function loadConversationHistory(conversationId: string, maxMessages: numb
     ]
   }
 
-  const { data: historyMessages } = await supabase
+  const { data: historyMessages } = await getSupabase()
     .from("messages")
     .select("role, content")
     .eq("conversation_id", conversationId)
