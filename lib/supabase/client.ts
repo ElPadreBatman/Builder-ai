@@ -15,15 +15,9 @@ export function createClient() {
   const supabaseAnonKey = SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
   if (!supabaseUrl || !supabaseAnonKey) {
-    // In development/preview, return a mock client that will be replaced on next render
-    if (typeof window !== "undefined") {
-      console.warn("[v0] Supabase env vars not yet available, will retry...")
-      // Return null to signal client is not ready
-      return null as any
-    }
-    throw new Error(
-      "Les variables d'environnement Supabase ne sont pas configurées. Veuillez verifier la section Vars dans la sidebar.",
-    )
+    // During build/SSR prerender, env vars may not be set yet — return null gracefully
+    console.warn("[supabase] NEXT_PUBLIC_SUPABASE_URL or ANON_KEY not set, returning null client")
+    return null as any
   }
 
   supabaseClient = createBrowserClient(supabaseUrl, supabaseAnonKey, {
