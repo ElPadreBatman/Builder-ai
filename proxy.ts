@@ -35,9 +35,39 @@ function getLocaleFromHeaders(request: NextRequest): Locale {
   return i18n.defaultLocale
 }
 
+// ─── Domaine client estimateur ────────────────────────────────────────────────
+// Configurer dans Vercel : Settings → Env Vars → CUSTOMER_DOMAIN=estimer.gestionnaf.ca
+// Plusieurs domaines : CUSTOMER_DOMAIN=estimer.gestionnaf.ca,estimation.gestionnaf.ca
+const CUSTOMER_DOMAINS = (process.env.CUSTOMER_DOMAIN ?? "")
+  .split(",")
+  .map((d) => d.trim().toLowerCase())
+  .filter(Boolean)
+
+const ESTIMATEUR_PREFIXES = ["/estimateur", "/api/estimate", "/api/lead"]
+
+function isCustomerDomain(host: string): boolean {
+  if (CUSTOMER_DOMAINS.length === 0) return false
+  const h = host.toLowerCase().replace(/:\d+$/, "")
+  return CUSTOMER_DOMAINS.includes(h)
+}
+// ──────────────────────────────────────────────────────────────────────────────
+
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
-  
+
+  // ===== ISOLATION DOMAINE CLIENT (estimateur seulement) =====
+  const host = request.headers.get("host") ?? ""
+  if (isCustomerDomain(host)) {
+    if (pathname === "/" || pathname === "") {
+      return NextResponse.redirect(new URL("/estimateur", request.url))
+    }
+    if (ESTIMATEUR_PREFIXES.some((p) => pathname.startsWith(p))) {
+      return NextResponse.next()
+    }
+    // Tout autre route → estimateur (pas de Builder AI exposé)
+    return NextResponse.redirect(new URL("/estimateur", request.url))
+  }
+
   // ===== I18N LOCALE HANDLING =====
   // Check if this is a path that should have locale prefix
   const nonLocalizedPaths = [
