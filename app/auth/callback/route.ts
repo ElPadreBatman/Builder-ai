@@ -2,9 +2,11 @@ import { createClient } from "@/lib/supabase/server"
 import { NextResponse } from "next/server"
 import Stripe from "stripe"
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-01-27.acacia",
-})
+let _stripe: InstanceType<typeof Stripe> | null = null
+function getStripe() {
+  if (!_stripe) _stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: "2025-01-27.acacia" })
+  return _stripe
+}
 
 /**
  * Creates a Stripe customer and returns the customer ID.
@@ -17,7 +19,7 @@ async function createStripeCustomer(params: {
   company?: string
 }): Promise<string | null> {
   try {
-    const customer = await stripe.customers.create({
+    const customer = await getStripe().customers.create({
       email: params.email,
       name: params.name,
       metadata: {
