@@ -3,8 +3,8 @@
 import { CheckCircle2, Calendar, MessageSquare, Info } from 'lucide-react'
 import type { EstimationResult, ProjetData } from '@/app/estimateur/EstimateurClient'
 
-// Cal.com event path — set NEXT_PUBLIC_CAL_LINK=username/event-type in Vercel env vars
-const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? 'gestionnaf/visite-gratuite'
+// Cal.com team calendar — override via NEXT_PUBLIC_CAL_LINK env var if needed
+const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? 'team/gestion-af-construction'
 
 function formatCAD(n: number): string {
   if (!n) return '—'
