@@ -3,8 +3,8 @@
 import { CheckCircle2, Calendar, MessageSquare, Info } from 'lucide-react'
 import type { EstimationResult, ProjetData } from '@/app/estimateur/EstimateurClient'
 
-// 🔧 Mettre à jour ce lien avec l'URL Microsoft Bookings de Franco
-const BOOKING_URL = process.env.NEXT_PUBLIC_BOOKING_URL ?? '#'
+// Cal.com team calendar — override via NEXT_PUBLIC_CAL_LINK env var if needed
+const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? 'team/gestion-af-construction'
 
 function formatCAD(n: number): string {
   if (!n) return '—'
@@ -102,16 +102,16 @@ export default function PhaseResultats({
         )}
       </div>
 
-      {/* CTA */}
-      <a
-        href={BOOKING_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+      {/* CTA — Cal.com popup (data-cal-link is picked up by embed.js loaded in layout) */}
+      <button
+        data-cal-namespace="visite"
+        data-cal-link={CAL_LINK}
+        data-cal-config='{"layout":"month_view"}'
         className="flex items-center justify-center gap-2 w-full bg-[#facc15] hover:bg-[#fde047] active:bg-[#eab308] text-[#07101f] font-bold text-sm tracking-widest uppercase rounded-[3px] px-6 py-4 transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#facc15] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0d1b3e]"
       >
         <Calendar className="w-4 h-4" />
         Réserver ma visite gratuite
-      </a>
+      </button>
 
       {/* Legal disclaimer */}
       <p className="text-slate-600 text-[11px] leading-relaxed text-center border-t border-white/5 pt-4">
