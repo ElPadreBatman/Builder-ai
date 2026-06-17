@@ -51,7 +51,7 @@ export default function PhaseCoordonnees({
       {/* Blurred preview */}
       <div className="relative rounded-[4px] border border-sky-400/20 overflow-hidden">
         <div className="p-6 bg-[#0d1b3e]/60 select-none pointer-events-none" aria-hidden>
-          <p className="text-slate-400 text-xs tracking-widest uppercase mb-3">Ton estimation IA</p>
+          <p className="text-slate-400 text-xs tracking-widest uppercase mb-3">Ton estimation de rénovation</p>
           <div className="blur-md">
             <p className="text-sky-400 text-3xl sm:text-4xl font-bold tabular-nums">
               {formatCAD(estimation.fourchette_bas)}&nbsp;—&nbsp;{formatCAD(estimation.fourchette_haut)}
@@ -65,18 +65,18 @@ export default function PhaseCoordonnees({
           <div className="bg-sky-400/10 border border-sky-400/30 rounded-[3px] p-3 mb-3">
             <Lock className="w-6 h-6 text-sky-400" />
           </div>
-          <p className="text-white font-bold text-base">Estimation prête</p>
-          <p className="text-slate-400 text-xs mt-1">Identifie-toi pour la déverrouiller</p>
+          <p className="text-white font-bold text-base">Ta fourchette est prête</p>
+          <p className="text-slate-400 text-xs mt-1">Entre tes coordonnées pour la voir</p>
         </div>
       </div>
 
       {/* Gate form */}
       <div className="bg-[#0d1b3e]/50 border border-white/8 rounded-[4px] p-5">
         <h2 className="text-white font-bold text-lg mb-1">
-          Où on t&apos;envoie ton estimation ?
+          Presque là !
         </h2>
         <p className="text-slate-400 text-sm mb-5">
-          Un texto de confirmation avec ta fourchette t&apos;attend.
+          Entre ton prénom et ton numéro. Ta fourchette s&apos;affiche — et on te l&apos;envoie aussi par texto pour ne pas la perdre.
         </p>
 
         <form onSubmit={handleSubmit} noValidate className="space-y-4">

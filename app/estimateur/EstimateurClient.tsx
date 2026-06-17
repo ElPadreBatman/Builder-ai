@@ -142,10 +142,10 @@ export default function EstimateurClient() {
             Gestion A.F. Construction inc. · RBQ 5806-1391-01
           </p>
           <h1 className="text-white font-bold leading-none mb-2" style={{ fontSize: 'clamp(1.8rem, 6vw, 2.75rem)' }}>
-            Estimateur de projet IA
+            Combien va coûter ta réno ?
           </h1>
           <p className="text-slate-400 text-sm">
-            Décris ton projet. L&apos;IA calcule ta fourchette en secondes.
+            Décris ton projet en 2 minutes. On te donne une fourchette honnête — sans visite, sans engagement.
           </p>
         </header>
 
@@ -170,9 +170,9 @@ export default function EstimateurClient() {
                   </div>
                 </div>
                 <div className="text-center space-y-2">
-                  <p className="text-white font-semibold text-lg">Notre IA analyse ton projet…</p>
+                  <p className="text-white font-semibold text-lg">On analyse ton projet…</p>
                   <p className="text-slate-400 text-sm">
-                    Quelques secondes pour calibrer la fourchette sur le marché québécois 2026.
+                    On croise les détails avec les prix courants dans ta région.
                   </p>
                 </div>
                 <div className="w-48 h-0.5 bg-white/10 rounded-full overflow-hidden">

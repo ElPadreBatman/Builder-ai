@@ -37,7 +37,7 @@ export default function PhaseResultats({
       <div className="flex items-start gap-3 bg-emerald-400/8 border border-emerald-400/25 rounded-[4px] px-4 py-3">
         <MessageSquare className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
         <p className="text-emerald-300 text-sm">
-          <strong>Jade prépare ton estimation détaillée.</strong> Tu recevras un texto sous peu avec ta fourchette et les prochaines étapes.
+          <strong>Ta fourchette est confirmée par texto.</strong> Jade va te faire un suivi dans les prochaines heures pour répondre à tes questions.
         </p>
       </div>
 
@@ -47,7 +47,7 @@ export default function PhaseResultats({
         <div className="flex items-start justify-between gap-3">
           <div>
             <p className="text-slate-400 text-xs tracking-widest uppercase mb-1">
-              Estimation préliminaire IA — {projet.type}
+              Estimation préliminaire — {projet.type}
             </p>
             <p className="text-slate-300 text-sm leading-relaxed">
               {estimation.resume_projet}
@@ -115,7 +115,7 @@ export default function PhaseResultats({
 
       {/* Legal disclaimer */}
       <p className="text-slate-600 text-[11px] leading-relaxed text-center border-t border-white/5 pt-4">
-        Estimation préliminaire générée par intelligence artificielle, fournie à titre indicatif uniquement.
+        Estimation préliminaire fournie à titre indicatif uniquement, sans engagement.
         Ne constitue pas une soumission. Le prix final est établi après visite et évaluation sur place.
         Gestion A.F. Construction inc. — RBQ 5806-1391-01.
       </p>
